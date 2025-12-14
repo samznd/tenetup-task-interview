@@ -1,0 +1,31 @@
+{
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      {
+        "name": "preset-default",
+        "params": {
+          "overrides": {
+            "removeViewBox": false,
+            "removeUnknownsAndDefaults": {
+              "keepRoleAttr": true
+            }
+          }
+        }
+      },
+      { "name": "removeStyleElement", "active": true },
+      { "name": "prefixIds", "active": true }
+    ]
+  },
+  "typescript": true,
+  "namedExport": "ReactComponent",
+  "jsxRuntime": "automatic",
+  "dimensions": true,
+  "titleProp": true,
+  "removeUnknownsAndDefaults": true,
+  "keepUselessDefs": false,
+  "icon": false,
+  "memo": true,
+  "prettier": true,
+  "expandProps": "end"
+}

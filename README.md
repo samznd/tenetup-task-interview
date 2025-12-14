@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Services Management Application
 
-## Getting Started
+A modern services management application for Hosting and VPS services with an optimized user interface and user experience.
 
-First, run the development server:
+## 🚀 Features
+
+- ✅ Complete management of Hosting and VPS services
+- ✅ Dynamic forms with advanced validation
+- ✅ Data persistence in localStorage
+- ✅ Modern UI/UX with Tailwind CSS
+- ✅ Loading states and Skeleton screens
+- ✅ Modal confirmation for delete operations
+- ✅ Type-safe with TypeScript
+- ✅ Context API-based architecture
+
+## 📋 Technical Requirements
+
+- **Node.js**: >= 18.x
+- **npm**: >= 9.x (or yarn/pnpm)
+
+## 🛠️ Technologies
+
+- **Framework**: Next.js 16 (App Router)
+- **UI Library**: React 19
+- **Styling**: Tailwind CSS v4
+- **Form Management**: React Hook Form
+- **Validation**: Zod
+- **Icons**: Lucide React
+- **Language**: TypeScript
+
+## 📦 Installation & Setup
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                    # Next.js App Router
+├── components/
+│   ├── pages/             # Page-specific components
+│   └── shared/            # Reusable UI components
+├── contexts/              # React Context providers
+├── hooks/                 # Custom React hooks
+├── schemas/               # Zod validation schemas
+├── types/                 # TypeScript type definitions
+├── utils/                 # Utility functions
+└── constants/             # Application constants
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Create Service**: Add new service with dynamic validation
+- **Edit Service**: Update existing service information
+- **Delete Service**: Remove service with user confirmation
+- **Persist Data**: Automatic saving to localStorage
+- **Loading States**: Display loading status with Skeleton screens
 
-## Deploy on Vercel
+## 🔧 Scripts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run dev` - Run development server
+- `npm run build` - Build for production
+- `npm run start` - Run production build
+- `npm run lint` - Run ESLint
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Notes
+
+- Data is stored in `localStorage`
+- Form validation changes based on service type (Hosting/VPS)
+- Project uses SSR-safe patterns for localStorage
